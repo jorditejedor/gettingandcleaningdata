@@ -75,6 +75,6 @@ step5<-summarize_at(group_by(step4,subject,activityDescription),
 
 # final save datasets for further use
 
-write.csv(step4,"tidy.csv")
-write.csv(step5,"summary.csv")
+write.table(step4,"tidy.txt",row.names = FALSE)
+write.table(step5,"summary.txt",row.names = FALSE)
 
